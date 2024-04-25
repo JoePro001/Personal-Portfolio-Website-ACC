@@ -255,6 +255,10 @@ footer {
     display: block;
 }
 
+.readMe {
+    color: #FFFFFF;
+}
+
 /* Media Queries */
 
 /* Extra Large screens */
