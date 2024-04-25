@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--
+       Personal Portfolio Website projects Page
+       Author: Carl Provost
+       Date Created: 3/28/2024
+       Last Updated: 4/25/2024
+       Filename: projects.html
+    -->
+
+    <!-- Meta tags for character set, viewport, title, description, keywords, and author -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio Website</title>
+    <meta name="description"
+        content="Welcome to my portfolio! I am a passionate web developer showcasing my skills and projects.">
+    <meta name="keywords" content="web development, HTML, CSS, JavaScript, portfolio">
+    <meta name="author" content="Carl Provost">
+    <!-- External CSS stylesheets -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/my_layout.css">
+    <link rel="stylesheet" href="../css/my_styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header and navigation section -->
+        <header>
+            <nav>
+                <div class="nav">
+                    <!-- Dark mode toggle button -->
+                    <div class="dark">
+                        <button type="button" aria-label="Toggle Dark Mode">Dark Mode</button>
+                    </div>
+                    <!-- Navigation links -->
+                    <div class="links">
+                        <!-- Close button for the menu -->
+                        <button id="close" aria-label="Close Menu">x</button>
+                        <ul>
+                            <li><a href="../index.html" aria-label="Home">Home</a></li>
+                            <li><a href="workexperience.html" aria-label="Work Experience">Work Experience</a></li>
+                            <li><a href="blank1.html" aria-label="Blank1">Blank1</a></li>
+                            <li><a href="blank2.html" aria-label="Blank2">Blank2</a></li>
+                        </ul>
+                        <!-- Hamburger menu button -->
+                        <button id="ham" aria-label="Open Menu"><img src="../mediawebpagefiles/hamburger.svg"
+                                alt="Menu"></button>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="border" aria-hidden="true"></div>
+        <!-- Main content section -->
+        <section>
+            <div class="p_top">
+                <h1>Project Showcase</h1>
+                <p>Click on project links to view details.</p>
+            </div>
+        </section>
+        <div class="line"></div>
+        <div class="p_container">
+            <!-- Sidebar with project links -->
+            <aside>
+                <div class="p_left">
+                    <h2>Links to Projects</h2>
+                    <ol class="projectLinks">
+                        <li><button id="big-metro" >Project
+                                1 - Big Metros</a>
+                        </li>
+                        <li><button id="electronic-byte">Project 2 -
+                                ElectronicBytes</a></li>
+                        <li><button id="student-dashboard">Project 3 - Student Dashboard (<a href="#"
+                                    aria-label="Read Me">Read Me</a>)</a></li>
+                    </ol>
+                </div>
+            </aside>
+            <!-- Main content area for showcasing projects -->
+            <main class="background">
+                <div class="showcasing">
+                    <!-- Placeholder for dynamically loaded project details -->
+                    <div class="website-details" aria-label="big-metro">
+                        <embed src="https://joepro001.github.io/the-big-metros/" style="width:100%; height: 390px;">
+                    </div>
+
+                    <div class="website-details" aria-label="electronic-byte">
+                        <embed src="https://joepro001.github.io/ElectronicBytes-E-Store/"
+                            style="width:100%; height: 390px;">
+                    </div>
+
+                    <div class="website-details" aria-label="student-dashboard">
+                        <embed src="https://joepro001.github.io/Student-Dashboard/" style="width:100%; height: 390px;">
+                    </div>
+                </div>
+            </main>
+        </div>
+        <div class="border" aria-hidden="true"></div>
+        <!-- Footer section -->
+        <footer>
+            <p>&#x1F4BB; &copy; 2024 Carl Provost. All rights reserved. &#x1F4BB;</p>
+        </footer>
+    </div>
+    <!-- External JavaScript files for dynamic functionality -->
+    <script src="../javascript/project_script.js" defer></script>
+    <script src="../javascript/dark_script.js" defer></script>
+    <script src="../javascript/button_script.js" defer></script>
+</body>
+
+</html>

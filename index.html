@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--
+       Personal Portfolio Website Home Page
+       Author: Carl Provost
+       Date Created: 3/28/2024
+       Last Updated: 4/25/2024
+       Filename: index.html
+    -->
+
+    <!-- Meta tags for character set, viewport, title, description, keywords, and author -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio Website</title>
+    <meta name="description"
+        content="Welcome to my portfolio! I am a passionate web developer showcasing my skills and projects.">
+    <meta name="keywords" content="web development, HTML, CSS, JavaScript, portfolio">
+    <meta name="author" content="Carl Provost">
+    <!-- External CSS stylesheets -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/my_layout.css">
+    <link rel="stylesheet" href="./css/my_styles.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <!-- Navigation section -->
+        <nav>
+            <div class="nav">
+                <!-- Dark mode toggle button -->
+                <div class="dark">
+                    <button type="button" aria-label="Toggle Dark Mode">Dark Mode</button>
+                </div>
+                <!-- Navigation links -->
+                <div class="links">
+                    <!-- Close button for the menu -->
+                    <button id="close" aria-label="Close Menu">x</button>
+                    <ul>
+                        <li><a href="./html/projects.html" aria-label="Projects">Projects</a></li>
+                        <li><a href="./html/workexperience.html" aria-label="Work Experience">Work Experience</a></li>
+                        <li><a href="./html/blank1.html" aria-label="Blank1">Blank1</a></li>
+                        <li><a href="./html/blank2.html" aria-label="Blank2">Blank2</a></li>
+                    </ul>
+                    <!-- Hamburger menu button -->
+                    <button id="ham" aria-label="Open Menu"><img src="./mediawebpagefiles/hamburger.svg"
+                            alt="Menu"></button>
+                </div>
+            </div>
+        </nav>
+        <div class="border" aria-hidden="true"></div>
+        <!-- Header section -->
+        <header>
+            <div class="header">
+                <!-- Images and overlay text -->
+                <div class="picture">
+                    <div class="pic1" aria-label="Picture of my HTML code"><img src="./mediawebpagefiles/HTMLcode.png"
+                            alt="HTML code"></div>
+                    <div class="pic2" aria-label="Picture of my CSS code"><img src="./mediawebpagefiles/CSScode.png"
+                            alt="CSS code"></div>
+                </div>
+                <div class="overlay">
+                    <!-- Main heading and introductory text -->
+                    <h1>Welcome to my portfolio</h1>
+                    <p>Welcome to my portfolio! I go by <em>Joe</em>, a web developer here to transform your vision into
+                        reality.
+                        Check out my work and <strong>let's create something extraordinary!</strong>
+                    </p>
+                </div>
+            </div>
+        </header>
+        <div class="border" aria-hidden="true"></div>
+        <!-- Main content section -->
+        <main>
+            <div class="main">
+                <!-- About me content -->
+                <div class="me-border">
+                    <h2>A little something about me!</h2>
+                    <p>As a web developer, I create websites and online applications. I use HTML, CSS, and JavaScript
+                        to build user-friendly interfaces and ensure everything looks good and works smoothly. It's a
+                        creative
+                        and ever-changing field where I enjoy solving problems and making cool stuff for the internet.
+                    </p>
+                </div>
+            </div>
+        </main>
+        <div class="border" aria-hidden="true"></div>
+        <!-- Article section -->
+        <article>
+            <div class="article">
+                <!-- Education information -->
+                <h2>Education</h2>
+                <p class="acc">Austin Community College</p>
+                <!-- Skills and expertise details -->
+                <div class="skills-section">
+                    <h3>Skills & Expertise</h3>
+                    <div class="columns">
+                        <!-- Front-end programming skills -->
+                        <div class="front-end-skills">
+                            <h4>Front-end Programming:</h4>
+                            <p class="levels">
+                                <span>HTML = Intermediate</span>
+                                <span>CSS = Advanced Beginner</span>
+                                <span>JavaScript = Beginner</span>
+                                <span>Bootstrap = Beginner</span>
+                            </p>
+                        </div>
+                        <!-- Back-end programming skills -->
+                        <div class="back-end-skills">
+                            <h4>Back-end Programming:</h4>
+                            <p class="levels">
+                                <span>Python = Beginner</span>
+                                <span>JSON = Beginner</span>
+                                <span>MySQL = End of 2024</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Embedded YouTube video -->
+                <hr class="line">
+                <div class="vid">
+                    <iframe width="100%" height="400"
+                        src="https://www.youtube.com/embed/kWkyHamgzKc?si=rNeh_YAravouScP6" title="YouTube video player"
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+                        encrypted-media;
+                        gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen aria-label="Embedded YouTube video"></iframe>
+                </div>
+            </div>
+        </article>
+        <div class="border" aria-hidden="true"></div>
+        <!-- Contact section -->
+        <section>
+            <div class="contact">
+                <!-- Contact information -->
+                <h2>Contact</h2>
+                <p>Feel free to reach out to me via email at <a href="mailto:jprovost12@gmail.com"
+                        aria-label="Email Address">jprovost12@gmail.com</a>
+                    or
+                    <a href="mailto:jprovost12@hotmail.com"
+                        aria-label="Alternate Email Address">jprovost12@hotmail.com</a>
+                    for any inquiries or collaboration.
+                </p>
+                <p><a href="https://www.LinkedIn.com" aria-label="LinkedIn Profile">LinkedIn Profile</a> (Coming in the
+                    future)</p>
+            </div>
+            <!-- Contact form -->
+            <div class="form">
+                <form id="contactForm">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="John Smith" required><br><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="jsmith@gmail.com"
+                        pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required><br><br>
+                    <label for="phone">Phone #:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="555-555-5555"
+                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br><br>
+                    <label for="message">Message:</label>
+                    <div>
+                        <textarea id="message" name="message" rows="10" placeholder="Type message here."
+                            required></textarea>
+                    </div>
+                    <br><br>
+                </form>
+                <div class="button">
+                    <!-- Form submission buttons -->
+                    <button type="reset" aria-label="Clear Form">Clear</button> <button type="submit"
+                        aria-label="Submit Form">Submit</button>
+                </div>
+                <br><br>
+            </div>
+            <!-- Return to top link -->
+            <div class="top"><a href="#" aria-label="Return to Top">Return to Top</a></div>
+        </section>
+        <div class="border" aria-hidden="true"></div>
+        <!-- Footer section -->
+        <footer>
+            <p>&#x1F4BB; &copy; 2024 Carl Provost. All rights reserved. &#x1F4BB;</p>
+        </footer>
+    </div>
+    <!-- External JavaScript file for dynamic functionality -->
+    <script src="./javascript/dark_script.js" defer></script>
+    <script src="./javascript/button_script.js" defer></script>
+</body>
+
+</html>
